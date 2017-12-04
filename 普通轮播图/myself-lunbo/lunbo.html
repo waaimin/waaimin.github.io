@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 10px auto;
+        }
+
+        .fly {
+            width: 380px;
+            height: 280px;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style: none;
+            width: 1000%;
+            height: 280px;
+            position: absolute;
+        }
+
+        ul li {
+            width: 10%;
+            height: 280px;
+            float: left;
+        }
+
+        ul li img {
+            width: 380px;
+            height: 280px;
+        }
+
+        .fly button {
+            position: absolute;
+            color: black;
+            font-size: 30px;
+            top: 115px;
+            border-radius: 50%;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        ol {
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            list-style: none;
+            margin-left: 90px;
+        }
+
+        ol li {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ff334c;
+            border-radius: 50%;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+
+        ol li:nth-child(1) {
+            margin-left: 20px;
+        }
+
+        .color {
+            background: blue;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="fly">
+        <ul>
+            <li><img src="./img/1.jpg" alt="">1</li>
+            <li><img src="./img/2.jpg" alt="">2</li>
+            <li><img src="./img/3.jpg" alt="">3</li>
+            <li><img src="./img/4.jpg" alt="">4</li>
+            <li><img src="./img/5.jpg" alt="">5</li>
+        </ul>
+        <button class="left">←</button>
+        <button class="right">→</button>
+        <ol>
+            <li class="color">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+    </div>
+</div>
+<script>
+    var ul = document.querySelector("ul");
+    var list = ul.querySelectorAll("li");
+    var ol = document.querySelector("ol");
+    var point = ol.querySelectorAll("li");
+    var left = document.querySelector(".left");
+    var right = document.querySelector(".right");
+
+    var width = list[0].offsetWidth;
+    var timer = null;
+    var index = 0;
+
+    //  ----------------------------------------------
+    auto();
+
+    //  ----------------------------------------------小圆点
+    for (var i = 0; i < list.length; i++) {
+        point[i].index = i
+        point[i].onmouseenter = function () {
+            clearInterval(timer);
+            for(var j = 0; j < point.length; j++){
+                point[j].className="";
+            }
+            index = this.index ;
+            point[index].className ="color";
+//            lll(this.index);
+            ul.style.left = -(index * width) + "px";
+        };
+        point[i].onmouseleave = function () {
+            auto();
+        }
+    }
+    //  ----------------------------------------------左右按钮
+    right.onclick = function () {
+        clearInterval(timer);
+        index++;
+        if (index > list.length - 1) {
+            index = 0;
+        }
+//        for(var k = 0; k < point.length; k++){
+//            point[k].className="";
+//        }
+//        point[index].className ="color";
+        lll(index);
+        ul.style.left = -(index * width) + "px";
+    };
+    left.onclick = function () {
+        clearInterval(timer);
+        index--;
+        if (index < 0) {
+            index = list.length - 1;
+        }
+//        for(var k = 0; k < point.length; k++){
+//            point[k].className="";
+//        }
+//        point[index].className ="color";
+        lll(index);
+        ul.style.left = -(index * width) + "px";
+    };
+    //  ----------------------------------------------鼠标进出
+    ul.onmousemove = function () {
+        clearInterval(timer);
+    };
+    ul.onmouseleave = function () {
+        auto();
+    }
+    //  ----------------------------------------------自动轮播
+
+
+    function auto() {
+        timer = setInterval(function () {
+            index++;
+            if (index > list.length - 1) {
+                index = 0;
+            }
+//            for(var j = 0; j < point.length; j++){
+//                point[j].className="";
+//            }
+//            point[this.index].className ="color";
+            lll(index);
+            ul.style.left = -(index * width) + "px";
+//                     console.log(ul.style.left);
+        }, 1000)
+    }
+    function lll(indexs) {
+        for(var j = 0; j < point.length; j++){
+            point[j].className="";
+        }
+        point[indexs].className ="color";
+    }
+
+
+</script>
+</body>
+</html>
