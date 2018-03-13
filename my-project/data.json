@@ -1,0 +1,193 @@
+{
+  "home": {
+    "account": "账户管理",
+    "transfer": "转账汇款",
+    "creditCard": "信用卡",
+    "loan": "贷款",
+    "remit": "结汇购汇",
+    "liCai": "中银理财",
+    "jiJin": "基金",
+    "more": "更多",
+    "finance": "跨境金融",
+    "assets": "资产管理",
+    "mobile": "移动支付",
+    "custom": "定制",
+    "focus": "我的关注",
+    "stock": {
+      "gold": {
+        "number": "1",
+        "species": "账户贵金属",
+        "name": "黄金",
+        "unit": "克",
+        "currency": "人民币",
+        "as": "跌涨",
+        "buy": "客户买入价",
+        "buyPrice": 271.22,
+        "sell": "客户卖出价",
+        "sellPrice": 270.46
+      },
+      "silver": {
+        "number": "2",
+        "species": "账户贵金属",
+        "name": "白银",
+        "unit": "克",
+        "currency": "人民币",
+        "as": "跌涨",
+        "buy": "客户买入价",
+        "buyPrice": 271.22,
+        "sell": "客户卖出价",
+        "sellPrice": 270.46
+      },
+      "platinum": {
+        "number": "3",
+        "species": "账户贵金属",
+        "name": "铂金",
+        "unit": "克",
+        "currency": "人民币",
+        "as": "跌涨",
+        "buy": "客户买入价",
+        "buyPrice": 271.22,
+        "sell": "客户卖出价",
+        "sellPrice": 270.46
+      }
+    },
+    "num": [
+      {
+        "type": 0
+      },
+      {
+        "type": 1
+      },
+      {
+        "type": 2
+      },
+      {
+        "type": 3
+      },
+      {
+        "type": 4
+      },
+      {
+        "type": 5
+      }
+    ]
+  },
+  "invest": {
+    "account": "账户管理",
+    "transfer": "转账汇款",
+    "creditCard": "信用卡",
+    "loan": "贷款",
+    "remit": "结汇购汇",
+    "liCai": "中银理财",
+    "jiJin": "基金",
+    "more": "更多",
+    "title": "金融超市",
+    "num": [
+      {
+        "type": 0
+      },
+      {
+        "type": 1
+      },
+      {
+        "type": 2
+      },
+      {
+        "type": 3
+      },
+      {
+        "type": 4
+      },
+      {
+        "type": 5
+      }
+    ],
+    "focus": "我的关注",
+    "stock": {
+      "gold": {
+        "number": "1",
+        "species": "账户贵金属",
+        "name": "黄金",
+        "unit": "克",
+        "currency": "人民币",
+        "as": "跌涨",
+        "buy": "客户买入价",
+        "buyPrice": 271.22,
+        "sell": "客户卖出价",
+        "sellPrice": 270.46
+      },
+      "silver": {
+        "number": "2",
+        "species": "账户贵金属",
+        "name": "白银",
+        "unit": "克",
+        "currency": "人民币",
+        "as": "跌涨",
+        "buy": "客户买入价",
+        "buyPrice": 271.22,
+        "sell": "客户卖出价",
+        "sellPrice": 270.46
+      },
+      "platinum": {
+        "number": "3",
+        "species": "账户贵金属",
+        "name": "铂金",
+        "unit": "克",
+        "currency": "人民币",
+        "as": "跌涨",
+        "buy": "客户买入价",
+        "buyPrice": 271.22,
+        "sell": "客户卖出价",
+        "sellPrice": 270.46
+      }
+    }
+  },
+  "life": {
+    "place": "北京",
+    "title": "生活",
+    "account": "账户管理",
+    "transfer": "转账汇款",
+    "creditCard": "信用卡",
+    "loan": "贷款",
+    "remit": "结汇购汇",
+    "liCai": "中银理财",
+    "jiJin": "基金",
+    "more": "更多",
+    "num": [
+      {
+        "type": 0
+      },
+      {
+        "type": 1
+      },
+      {
+        "type": 2
+      },
+      {
+        "type": 3
+      },
+      {
+        "type": 4
+      },
+      {
+        "type": 5
+      }
+    ],
+    "account": "话费充值",
+    "transfer": "加油卡充值",
+    "creditCard": "就医挂号",
+    "loan": "社会保障",
+    "remit": "公积金服务",
+    "liCai": "燃气费",
+    "jiJin": "取暖费",
+    "more": "更多",
+    "wonderful": "精彩特惠",
+    "coupon": "优惠券",
+    "poin": "网点排队",
+    "mark": "纪念币预约",
+    "wonderfulUes": "优惠尽在掌握",
+    "couponUes": "优惠限时抢",
+    "poinUes": "减省排队时间"
+  },
+  "mine": {}
+}
